@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> -->
+  <link rel="stylesheet" href="styles.css" />
+  <title>Editeur HTML/CSS</title>
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <h1 class="text-center">My Front-End Editor</h1>
+  <div class="container">
+    <div class="htmleditor">
+      <h2>HTML</h2>
+      <div class="tags">
+        <input type="button" value="bold" />
+        <input type="button" value="italic" />
+        <label for="number">Characters max</label>
+        <input type="number" id="number" value="200" />
+      </div>
+
+      <textarea class="editor" cols="30" rows="10" maxlength="200"></textarea>
+
+
+      <meter class="charsMeter" min="0" optimum="50" low="100" high="160" max="200"></meter>
+
+      <p class="charsRemaining"></p>
+    </div>
+    <div class="csseditor">
+      <h2>CSS</h2>
+      <textarea class="editorCSS" cols="30" rows="10"></textarea>
+    </div>
+    <div class="jseditor">
+      <h2>JS</h2>
+      <textarea class="editorJS" cols="30" rows="10"></textarea>
+    </div>
+  </div>
+  <input type="button" value="Exécuter" />
+  <div class="preview"></div>
+</body>
+
+</html>
